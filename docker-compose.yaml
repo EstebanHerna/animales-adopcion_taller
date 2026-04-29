@@ -1,0 +1,16 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:16
+    container_name: animales-db
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER:     postgres
+      POSTGRES_PASSWORD: secret
+
+      POSTGRES_DB:       animalesDB
+    volumes:
+      - animales-pg-data:/var/lib/postgresql/data
+volumes:
+  animales-pg-data:
