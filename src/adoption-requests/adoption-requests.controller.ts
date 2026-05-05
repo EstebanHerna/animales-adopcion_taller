@@ -8,7 +8,7 @@ import {
 
 import { AdoptionRequestsService }   from './adoption-requests.service';
 import { CreateAdoptionRequestDto }  from './dto/create-adoption-request.dto';
-import { UpdateAdoptionStatusDto }   from './dto/update-adoption-request.dto';
+import { UpdateAdoptionRequestDto as UpdateAdoptionStatusDto } from './dto/update-adoption-request.dto';
 
 @ApiTags('adoption-requests')
 @Controller('adoption-requests')
